@@ -9,6 +9,7 @@ function Home() {
             <Head>
                 <title>Home</title>
             </Head>
+            <img src="/static/teste.jpg" width="200" />
             <h1>Ola ET</h1>
             <Link href="/users">
                 <a>Usuários</a>
