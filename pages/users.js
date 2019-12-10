@@ -1,17 +1,21 @@
 import React from 'react';
 import axios from 'axios';
-import Link from 'next';
+import Link from 'next/link';
+import Head from 'next/head';
 
 function User({ users }) {
     return (
         <div>
+            <Head>
+                <title>Usuários</title>
+            </Head>
             <ul>
                 {users.map((user) => (
                     <li key={user.id}>{user.login}</li>
                 ))}
             </ul>
             <Link href="/">
-                <a>Ola</a>
+                <a>Voltar</a>
             </Link>
         </div>
     );
